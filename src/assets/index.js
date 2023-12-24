@@ -32,9 +32,20 @@ import live from './live.png';
 import restro from './restro.png';
 import snapchat from './snapchat.png';
 import twitter from './twitter.png';
+import facebook from './facebook.png';
 
 import desktop from './desktop.png';
 import techMobile from './mobile-tech.png'
+import branch8 from './branch8.png'
+import hbs from './hbs.png'
+import contenthub from './contenthub.png'
+import trustandsafety from './trustandsafety.png'
+import opencampus from './opencampus.png'
+import okaybear from './okaybear.png'
+import dragon from './dragon.png'
+import hhome from './hhome.png'
+import mothercare from './mothercare.png'
+import mocaverse from './mocaverse.png'
 
 export {
   logo,
@@ -69,5 +80,16 @@ export {
   gitlab,
   abromart,
   desktop,
-  techMobile
+  techMobile,
+  facebook,
+  hbs,
+  branch8,
+  contenthub,
+  trustandsafety,
+  opencampus,
+  okaybear,
+  hhome,
+  dragon,
+  mothercare,
+  mocaverse
 };

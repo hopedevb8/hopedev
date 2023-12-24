@@ -1,28 +1,31 @@
 import {
-  abromart,
-  backend,
   bootstrap,
-  codedrops,
-  corrtex,
+  branch8,
+  contenthub,
   creator,
   css,
-  fib,
+  dragon,
+  facebook,
   figma,
   git,
   github,
-  gitlab,
   gmail,
+  hbs,
+  hhome,
   html,
   instagram,
   jQuery,
   javascript,
   linkedin,
   mobile,
+  mocaverse,
+  mothercare,
+  okaybear,
+  opencampus,
   reactjs,
   redux,
-  restro,
   tailwind,
-  twitter,
+  trustandsafety,
   typescript,
   web
 } from "../assets";
@@ -53,10 +56,6 @@ const services = [
   {
     title: "Frontend Web Development",
     icon: mobile,
-  },
-  {
-    title: "Custom Web Design",
-    icon: backend,
   },
   {
     title: "Website Optimization",
@@ -113,11 +112,11 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Frontend Developer Intern",
-    company_name: "CodeDrops Tech",
-    icon: codedrops,
+    title: "Frontend Developer",
+    company_name: "HBS Solutions",
+    icon: hbs,
     iconBg: "#383E56",
-    date: "Oct 2022 - Dec 2022",
+    date: "March 2021 - May 2022",
     points: [
       "Created responsive and user-friendly websites using HTML, CSS, and JavaScript.",
       "Utilized Bootstrap and jQuery to enhance website functionality and appearance.",
@@ -126,14 +125,14 @@ const experiences = [
     ],
   },
   {
-    title: "React Js Developer",
-    company_name: "CodeDrops Tech",
-    icon: codedrops,
+    title: "Frontend Developer",
+    company_name: "Branch 8",
+    icon: branch8,
     iconBg: "#383E56",
-    date: "Jan 2023 - Present",
+    date: "June 2022 - Present",
     points: [
       "Developing responsive web apps with React, Redux Toolkit, and TypeScript.",
-      "Creating efficient UIs with Tailwind CSS for web apps.",
+      "Update and fix for Shopify eCommerce products.",
       "Collaborating with cross-functional teams to deliver quality web apps on time and within budget.",
       "Improving React development practices within the team to boost efficiency and quality.",
     ],
@@ -150,14 +149,6 @@ const socials = [
     link: "https://github.com/hopedevb8"
   },
   {
-    image: gitlab,
-    link: "#"
-  },
-  {
-    image: twitter,
-    link: "#"
-  },
-  {
     image: instagram,
     link: "https://www.instagram.com/hopedevb8/"
   },
@@ -165,109 +156,175 @@ const socials = [
     image: gmail,
     link: "mailto:nguyendinhhop8400@gmail.com"
   }
+  ,
+  {
+    image: facebook,
+    link: "https://www.facebook.com/dnhndh/"
+  }
 ]
 
 const projects = [
   {
-    name: "FIB",
+    name: "MagicEden Content Hub",
     description:
-      "Web-based platform that allows users to create a wide range of high-quality capacity profiles. You can quickly set up a capacity profile (FML, IZP or BAR) using customizable formats.",
+      "Web-based platform that provides information and articles about the NFT market.",
     tags: [
       {
-        name: "html",
+        name: "ReactJS",
         color: "blue-text-gradient",
       },
       {
-        name: "bootstrap",
+        name: "NextJs",
         color: "green-text-gradient",
       },
       {
-        name: "javascript",
+        name: "Cloudflare",
         color: "orange-text-gradient"
       },
       {
-        name: "jQuery",
+        name: "Styled Component",
         color: "pink-text-gradient",
       },
     ],
-    image: fib,
+    image: contenthub,
     openSource: false,
-    source_code_link: "https://www.fibonline.nl/",
+    source_code_link: "https://blog.magiceden.io/",
   },
   {
-    name: "Corrtex",
+    name: "MagicEden Trust and Safety",
     description:
-      "A privacy writing assistant that helps you improve your texts through smart and simple support. It offers suggestions while you write within Outlook, Gmail, Apple Mail, Word and Google Docs.",
+      "Magic Eden aims to be your destination for discovery, expression, and ownership across digital cultures. ",
     tags: [
       {
-        name: "html",
+        name: "ReactJS",
         color: "blue-text-gradient",
       },
       {
-        name: "sass",
+        name: "NextJs",
         color: "green-text-gradient",
       },
       {
-        name: "javascript",
+        name: "Styled Component",
         color: "orange-text-gradient"
       },
-      {
-        name: "jQuery",
-        color: "pink-text-gradient",
-      },
     ],
-    image: corrtex,
+    image: trustandsafety,
     openSource: false,
-    source_code_link: "https://corrtex.nl/",
+    source_code_link: "https://trustandsafety.magiceden.io/",
   },
   {
-    name: "Abromarkt",
+    name: "Open Campus ID",
     description:
-      "Arbomarkt connects you as an employer or employee with a wide range of occupational health and safety specialists. Take control and find your ideal match quickly and easily.",
+      "Empowering the next generation of lifelong learners with Proof of Education. Own your own academic achievements while earning rewards with Open Campus ID.",
     tags: [
       {
-        name: "html",
+        name: "ReactJs",
         color: "blue-text-gradient",
       },
       {
-        name: "bootstrap",
+        name: "Styled Component",
         color: "green-text-gradient",
       },
       {
-        name: "javascript",
+        name: "Cloudflare",
         color: "orange-text-gradient",
-      },
-      {
-        name: "jQuery",
-        color: "pink-text-gradient"
       }
     ],
-    image: abromart,
+    image: opencampus,
     openSource: false,
-    source_code_link: "http://nischal.caandd.com/",
+    source_code_link: "https://project-open-campus-id.pages.dev/",
   },
   {
-    name: "SK Restro",
+    name: "Okay Bear NFTs",
     description:
-      "A simple resturant website suitable to be used for a commercial resturant. Smooth UI and suttle animations that make the overall site look pleasing.",
+      "Okay Bears is a culture shift. A clean collection of 10.000 diverse bears building a virtuous community that transcends the metaverse into the real world.",
     tags: [
       {
-        name: "css",
+        name: "ReactJs",
         color: "blue-text-gradient",
       },
       {
-        name: "js",
+        name: "Styled Component",
         color: "green-text-gradient",
+      }
+    ],
+    image: okaybear,
+    openSource: false,
+    source_code_link: "https://okay-bears-marketplace.pages.dev/",
+  },
+  ,
+  {
+    name: "Boryoku Dragonz NFTs",
+    description:
+      "Bōryoku Dragonz are an exclusive collection of 1111 Dragon NFT's on the Solana blockchain, backed by a top team of NFT collectors, designers, ...",
+    tags: [
+      {
+        name: "ReactJs",
+        color: "blue-text-gradient",
       },
       {
-        name: "reactjs",
-        color: "pink-text-gradient",
-      },
+        name: "Styled Component",
+        color: "green-text-gradient",
+      }
     ],
-    image: restro,
-    openSource: true,
-    source_code_link: "#",
+    image: dragon,
+    openSource: false,
+    source_code_link: "https://project-me-whitelabelmarketplace.pages.dev/",
+  },
+  ,
+  {
+    name: "HomeandHome",
+    description:
+      "Project information management, sales department: site information, sales documents, sales policies",
+    tags: [
+      {
+        name: "ReactNative",
+        color: "blue-text-gradient",
+      }
+    ],
+    image: hhome,
+    openSource: false,
+    source_code_link: "https://apps.apple.com/vn/app/hhome/id1606280635?platform=iphone",
+  },
+  ,
+  {
+    name: "Mothercare HK",
+    description:
+      "Mothercare offers support for every step of your journey with their with their range of children’s clothing, toys, nursery essentials, pushchairs, car seats and more. Their products are made with you and your little ones in mind, making them the go-to brand for all things parenting.",
+    tags: [
+      {
+        name: "Shopify",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JQuery",
+        color: "green-text-gradient",
+      }
+    ],
+    image: mothercare,
+    openSource: false,
+    source_code_link: "https://www.mothercare.com.hk/",
+  },
+  ,
+  {
+    name: "Mocaverse",
+    description:
+      "Mocaverse is the Animoca Brands membership NFT collection of 8888 unique beings: The Mocas. Join the Mocas in the realms to Learn, Play, Do Good, ...",
+    tags: [
+      {
+        name: "ReactJs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Styled Component",
+        color: "green-text-gradient",
+      }
+    ],
+    image: mocaverse,
+    openSource: false,
+    source_code_link: "https://www.mocaverse.xyz/mocana",
   },
 ];
 
-export { services, technologies, experiences, projects, socials };
+export { experiences, projects, services, socials, technologies };
+
