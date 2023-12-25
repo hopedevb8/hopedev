@@ -52,9 +52,10 @@ function Contact() {
 	return (
 		<div className='relative z-0 h-screen flex justify-center items-center'>
 			<div className='xl:flex-row flex-col-reverse flex gap-10 overflow-hidden w-full'>
+				 
 				<motion.div
-					variants={slideIn("left", "tween", 0.2, 1)}
-					className='flex-[0.75] py-5 bg-black-100 px-8 rounded-2xl'
+					variants={slideIn("right", "tween", 0.2, 1)}
+					className='form-container lg:w-1/2 w-[100%] xl:h-auto xl:mt-8  mx-auto  mt-30 md:mt-0'
 				>
 					<p className={styles.sectionSubText}>Get in touch</p>
 					<h3 className={styles.sectionHeadText}>Contact.</h3>
@@ -76,7 +77,7 @@ function Contact() {
 									value={form.name}
 									onChange={handleChange}
 									placeholder='Enter your name'
-									className='bg-tertiary py-3 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+									className='input bg-tertiary py-3 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
 									required
 								/>
 							</label>
@@ -88,7 +89,7 @@ function Contact() {
 									value={form.email}
 									onChange={handleChange}
 									placeholder='Enter your Email'
-									className='bg-tertiary py-3 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+									className='input bg-tertiary py-3 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
 									required
 								/>
 							</label>
@@ -100,24 +101,18 @@ function Contact() {
 									value={form.message}
 									onChange={handleChange}
 									placeholder='Enter your message'
-									className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+									className='input bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
 									required
 								/>
 							</label>
 							<button
 								type='submit'
-								className='bg-tertiary py-3 px-8 outline-none w-fit  font-bold text-white rounded-xl shadow-md shadow-primary'
+								className='input bg-tertiary py-3 px-8 outline-none w-fit  font-bold text-white rounded-xl shadow-md shadow-primary'
 							>
 								Send
 							</button>
 						</form>
 					)}
-				</motion.div>
-				<motion.div
-					variants={slideIn("right", "tween", 0.2, 1)}
-					className='xl:flex-1 xl:h-auto xl:mt-8 md:h-[420px] h-[320px] mx-auto w-[240px] mt-60 md:mt-0'
-				>
-					<EarthCanvas />
 				</motion.div>
 			</div>
 			<StarsCanvas />

@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState,useContext } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
-
+import ProgressIndicator from './ScrollIndicator'
+import { Toggle } from './StyledNav'
+import { ThemeContext } from 'styled-components';
 const Navbar = () => {
 	const [active, setActive] = useState("");
 	const [toggle, setToggle] = useState(false);
@@ -13,10 +15,23 @@ const Navbar = () => {
 	useEffect(() => {
 		setActive(location.pathname);
 	}, [location]);
+ const themes = {
+    light: 'light',
+    dark: 'dark'
+  };
+  const [theme, setTheme] = useState(themes.dark);
+  const toggleTheme = () => {
+    setTheme(theme === themes.dark ? themes.light : themes.dark);
+  };
 
+  useEffect(() => {
+    const html = document.querySelector('html') ;
+    html.setAttribute('data-theme', theme);
+   
+  }, [theme]);
 	return (
 		<nav
-			className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
+			className={`lg:px-16 px-6 NavBar w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
 		>
 			<div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
 				<Link
@@ -49,12 +64,18 @@ const Navbar = () => {
 							</li>
 						);
 					})}
+					<Toggle className={theme} onClick={toggleTheme} id='toggle'>
+                      <div id='circle'></div>
+                    </Toggle>
 				</ul>
 				<div className='sm:hidden flex flex-1 justify-end items-center'>
+					<Toggle className={`${theme} mr-5`} onClick={toggleTheme} id='toggle'>
+                      <div id='circle'></div>
+                    </Toggle>
 					<img
 						src={toggle ? close : menu}
 						alt=''
-						className='w-[28px] h-[28px] object-contain cursor-pointer'
+						className='w-[28px] h-[28px] object-contain cursor-pointer nav-icon'
 						onClick={() => {
 							setToggle(!toggle);
 						}}
@@ -62,9 +83,9 @@ const Navbar = () => {
 					<div
 						className={`${
 							!toggle ? "hidden" : "flex"
-						} p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+						} p-6 black-gradient absolute top-20 right-0 mx-4 my-0 min-w-[140px] z-10 rounded-xl list-nav`}
 					>
-						<ul className='list-none flex flex-col justify-end items-start  gap-4'>
+						<ul className='list-none flex flex-col justify-end items-start  gap-4 '>
 							{navLinks.map((link) => {
 								return (
 									<li
@@ -87,6 +108,7 @@ const Navbar = () => {
 					</div>
 				</div>
 			</div>
+			<ProgressIndicator />
 		</nav>
 	);
 };

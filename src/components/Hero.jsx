@@ -16,7 +16,7 @@ const Hero = () => {
 					<div className='h-5 w-5 rounded-full bg-[#915eff]' />
 					<div className='w-1 sm:h-80 h-40 violet-gradient' />
 				</div>
-				<div>
+				<div className='z-50'>
 					<h1 className={`${styles.heroHeadText}  text-white`}>
 						Hi, I'm{" "}
 						<span className='animate-text bg-gradient-to-r from-teal-500 via-[#915eff] to-orange-500 bg-clip-text text-transparent'>

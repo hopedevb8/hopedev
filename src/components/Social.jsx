@@ -15,11 +15,11 @@ const Social = () => {
 					<p className={styles.sectionSubText}>Connect with me.</p>
 					<h2 className={styles.sectionHeadText}>Socials</h2>
 				</motion.div>
-				<div className='flex gap-7 flex-wrap justify-center mt-8'>
+				<div className='flex lg:gap-7 gap-3 flex-wrap justify-center mt-8'>
 					{socials.map((social, index) => {
 						return (
 							<a
-								className='black-gradient h-20 w-20 rounded-full group flex justify-center items-center cursor-pointer'
+								className='black-gradient lg:h-20 lg:w-20 h-12 w-12 rounded-full group flex justify-center items-center cursor-pointer'
 								href={social.link}
 								target='_blank'
 								key={index}

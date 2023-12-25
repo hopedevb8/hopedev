@@ -8,6 +8,7 @@ import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { Experience } from "../components";
+import { StarsCanvas } from "../components/canvas";
 
 const ProjectCard = ({
 	index,
@@ -26,7 +27,7 @@ const ProjectCard = ({
 					scale: 1,
 					speed: 450,
 				}}
-				className='bg-tertiary p-5 rounded-2xl w-full h-full flex flex-col justify-between'
+				className='project-card bg-tertiary p-5 rounded-2xl w-full h-full flex flex-col justify-between'
 			>
 				<div className='relative w-full h-[230px]'>
 					<img
@@ -92,6 +93,7 @@ const Works = () => {
 			</div>
 			<div className='w-full flex'>
 				<p
+					className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] z-50"
 				>
 					Following projects showcases my skills and experience through
 					real-world examples of my work. Each project is briefly described with
@@ -110,6 +112,8 @@ const Works = () => {
 					);
 				})}
 			</div>
+			<StarsCanvas />
+
 		</>
 	);
 };

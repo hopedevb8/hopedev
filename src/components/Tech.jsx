@@ -10,12 +10,11 @@ const Tech = () => {
 		<div className='flex flex-row flex-wrap justify-center gap-10'>
 			{technologies.map((tech) => {
 				return (
-					<div className='w-28 h-28 hidden sm:block' key={tech.name}>
+					<div className='lg:w-28 lg:h-28 w-20 h-20 sm:block' key={tech.name}>
 						<BallCanvas icon={tech.icon} />
 					</div>
 				);
 			})}
-      <img src= {techMobile} alt="" className="object-contain sm:hidden" />
 		</div>
 	);
 };

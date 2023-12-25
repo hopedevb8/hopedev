@@ -43,7 +43,7 @@ const About = () => {
 			</motion.div>
 			<motion.p
 				variants={fadeIn("", "", 0.1, 1)}
-				className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+				className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] z-50'
 			>
 				I'm a frontend developer skilled in Sass, Bootstrap, and Tailwind for
 				creating responsive UI. With expertise in jQuery, TypeScript, React, and
