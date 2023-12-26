@@ -2,14 +2,15 @@ import React, { useEffect,useState } from 'react';
 import './ToggleScene.css';
 import gsap from 'gsap';
 import {Draggable} from 'gsap/Draggable';
-import { MorphSVGPlugin } from 'gsap/MorphSVGPlugin';
+// import { MorphSVGPlugin } from 'gsap/MorphSVGPlugin';
 import click from '../../assets/click.mp3'
 
 const ToggleScene = ({ toggleTheme }) => {
   const [lightOn, setLightOn] = useState(false);
   useEffect(() => {
     const {  set, to, timeline } = gsap;
-    gsap.registerPlugin(Draggable,MorphSVGPlugin);
+    gsap.registerPlugin(Draggable);
+    // gsap.registerPlugin(Draggable,MorphSVGPlugin);
     let startX;
     let startY;
 
@@ -52,7 +53,7 @@ const ToggleScene = ({ toggleTheme }) => {
     for (let i = 1; i < CORDS.length; i++) {
       CORD_TL.add(
         to(CORDS[0], {
-          morphSVG: CORDS[i],
+          // morphSVG: CORDS[i],
           duration: 0.1,
           repeat: 1,
           yoyo: true,
