@@ -7,6 +7,7 @@ import { logo, menu, close } from "../assets";
 import ProgressIndicator from './ScrollIndicator'
 import { ThemeContext } from 'styled-components';
 import ToggleScene from './Toggle/ToggleScene'
+import { Toggle } from './StyledNav'
 const Navbar = () => {
 	const [active, setActive] = useState("");
 	const [toggle, setToggle] = useState(false);
@@ -69,7 +70,9 @@ const Navbar = () => {
 					
 				</ul>
 				<div className='sm:hidden flex flex-1 justify-end items-center'>
-					<ToggleScene toggleTheme={toggleTheme} />
+					<Toggle className={`${theme} mr-5`} onClick={toggleTheme} id='toggle'>
+                      <div id='circle'></div>
+                    </Toggle>
 					<img
 						src={toggle ? close : menu}
 						alt=''

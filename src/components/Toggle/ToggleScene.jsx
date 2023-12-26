@@ -2,16 +2,14 @@ import React, { useEffect,useState } from 'react';
 import './ToggleScene.css';
 import gsap from 'gsap';
 import {Draggable} from 'gsap/Draggable';
-import { MorphSVGPlugin } from 'gsap-trial/MorphSVGPlugin';
+import { MorphSVGPlugin } from 'gsap/MorphSVGPlugin';
 import click from '../../assets/click.mp3'
 
 const ToggleScene = ({ toggleTheme }) => {
   const [lightOn, setLightOn] = useState(false);
-  console.log(lightOn)
   useEffect(() => {
     const {  set, to, timeline } = gsap;
     gsap.registerPlugin(Draggable,MorphSVGPlugin);
-
     let startX;
     let startY;
 
