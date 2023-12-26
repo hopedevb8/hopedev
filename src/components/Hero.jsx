@@ -40,28 +40,7 @@ const Hero = () => {
 			<div className='flex justify-center absolute inset-0 h-full w-full bottom-0 mt-40'>
 				<Lottie animationData={codingCoffee} loop={true} />
 			</div>
-			<div className='absolute sm:bottom-10 bottom-[80px] w-full flex justify-center sm:hidden items-center'>
-				<a
-					onClick={() => {
-						document.getElementById("about").scrollIntoView({
-							behavior: "smooth",
-						});
-					}}
-				>
-					<div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2 cursor-pointer '>
-						<motion.div
-							animate={{ y: [0, 24, 0] }}
-							transition={{
-								duration: 1.5,
-								repeat: Infinity,
-								repeatType: "loop",
-							}}
-							className='h-3 w-3 rounded-full  bg-secondary mb-1'
-						></motion.div>
-					</div>
-					
-				</a>
-			</div>
+			
 		</section>
 	);
 };
