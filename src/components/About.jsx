@@ -11,7 +11,7 @@ const ServiceCard = ({ index, title, icon }) => {
 	const tiltRef = useRef(null); // Create a ref for Tilt component
 
 	return (
-		<Tilt ref={tiltRef} className='lg:min-w-[250px] min-w-full'>
+		<Tilt ref={tiltRef} className='lg:min-w-[250px] min-w-full flex-1'>
 			<motion.div
 				variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
 				className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
