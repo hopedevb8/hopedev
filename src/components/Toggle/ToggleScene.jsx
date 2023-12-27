@@ -100,7 +100,7 @@ const ToggleScene = ({ toggleTheme }) => {
   }, [toggleTheme]);
 
   return (
-    <div className="toggle-scene-container">
+    <div className="toggle-scene-container z-50">
       <svg className="toggle-scene" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin" viewBox="0 0 197.451 481.081">
         <defs>
           <marker id="e" orient="auto" overflow="visible" refX="0" refY="0">
