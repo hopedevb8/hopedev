@@ -8,6 +8,8 @@ import ProgressIndicator from './ScrollIndicator'
 import { ThemeContext } from 'styled-components';
 import ToggleScene from './Toggle/ToggleScene'
 import { Toggle } from './StyledNav'
+import click from '../assets/click.mp3'
+
 const Navbar = () => {
 	const [active, setActive] = useState("");
 	const [toggle, setToggle] = useState(false);
@@ -20,9 +22,16 @@ const Navbar = () => {
     light: 'light',
     dark: 'dark'
   };
-  const [theme, setTheme] = useState(themes.dark);
-  const toggleTheme = () => {
-    setTheme(theme === themes.dark ? themes.light : themes.dark);
+	const [theme, setTheme] = useState(themes.dark);
+	const AUDIO = {
+      CLICK: new Audio(click),
+    };
+  const toggleThemeMobile = () => {
+	  setTheme(theme === themes.dark ? themes.light : themes.dark);
+	  AUDIO.CLICK.play();
+  };
+ 	const toggleTheme = () => {
+	  setTheme(theme === themes.dark ? themes.light : themes.dark);
   };
 
   useEffect(() => {
@@ -70,7 +79,7 @@ const Navbar = () => {
 					
 				</ul>
 				<div className='sm:hidden flex flex-1 justify-end items-center'>
-					<Toggle className={`${theme} mr-5`} onClick={toggleTheme} id='toggle'>
+					<Toggle className={`${theme} mr-5`} onClick={toggleThemeMobile} id='toggle'>
                       <div id='circle'></div>
                     </Toggle>
 					<img
