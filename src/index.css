@@ -32,6 +32,18 @@
 		#000000
 	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+.linkedin.black-gradient{
+	background: #0766ff;
+}
+.instagram.black-gradient{
+	background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+}
+.facebook.black-gradient{
+	background: #0766ff;
+}
+.gmail.black-gradient{
+	background: linear-gradient( to right, #4285f4, #bb011b,#ea4336 ,#fbbd05,#34a853);
+}
 
 .violet-gradient {
 	background: #804dee;

@@ -19,7 +19,7 @@ const Social = () => {
 					{socials.map((social, index) => {
 						return (
 							<a
-								className='black-gradient lg:h-20 lg:w-20 h-12 w-12 rounded-full group flex justify-center items-center cursor-pointer'
+								className={`${social.name} black-gradient lg:h-20 lg:w-20 h-12 w-12 rounded-full group flex justify-center items-center cursor-pointer`}
 								href={social.link}
 								target='_blank'
 								key={index}

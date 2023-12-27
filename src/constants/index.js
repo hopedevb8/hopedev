@@ -148,24 +148,33 @@ const experiences = [
 const socials = [
   {
     image: linkedin,
-    link: "https://www.linkedin.com/in/hopnguyendinh/"
+    link: "https://www.linkedin.com/in/hopnguyendinh/",
+    name: 'linkedin'
   },
   {
     image: github,
-    link: "https://github.com/hopedevb8"
+    link: "https://github.com/hopedevb8",
+    name: 'github'
+
   },
   {
     image: instagram,
-    link: "https://www.instagram.com/hopedevb8/"
+    link: "https://www.instagram.com/hopedevb8/",
+    name: 'instagram'
+
   },
   {
     image: gmail,
-    link: "mailto:nguyendinhhop8400@gmail.com"
+    link: "mailto:nguyendinhhop8400@gmail.com",
+    name: 'gmail'
+
   }
   ,
   {
     image: facebook,
-    link: "https://www.facebook.com/dnhndh/"
+    link: "https://www.facebook.com/dnhndh/",
+    name: 'facebook'
+
   }
 ]
 
