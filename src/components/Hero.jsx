@@ -25,10 +25,7 @@ const Hero = () => {
 					</h1>
 					<p
 						className={`${styles.heroSubText} mt-2 text-white-100 glitch`}
-						data-text='Im a Vietnamese based web/app developer focused on
-  crafting clean & user‑friendly experiences, I am passionate about
-  building excellent software that improves the lives of those
-  around me.'
+						data-text='Im a Vietnamese based web/app developer focused on crafting clean & user‑friendly experiences, I am passionate about building excellent software that improves the lives of those around me.'
 					>
 						I'm a Vietnamese based web/app developer focused on
   crafting clean & user‑friendly experiences, I am passionate about
@@ -37,7 +34,7 @@ const Hero = () => {
 					</p>
 				</div>
 			</div>
-			<div className='flex justify-center absolute inset-0 h-full w-full bottom-0 mt-40'>
+			<div className='flex justify-center absolute inset-0 h-full w-full bottom-0 mt-40 lg:mt-48'>
 				<Lottie animationData={codingCoffee} loop={true} />
 			</div>
 			
