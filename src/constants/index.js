@@ -27,7 +27,8 @@ import {
   tailwind,
   trustandsafety,
   typescript,
-  web
+  web,
+  shopify
 } from "../assets";
 
 export const navLinks = [
@@ -71,6 +72,27 @@ const technologies = [
   {
     name: "CSS 3",
     icon: css,
+  }
+  ,
+  {
+    name: "JavaScript",
+    icon: javascript,
+  },
+  {
+    name: "TypeScript",
+    icon: typescript,
+  },
+  {
+    name: "React JS",
+    icon: reactjs,
+  },
+  {
+    name: "Shopify",
+    icon: shopify,
+  },
+  {
+    name: "git",
+    icon: git,
   },
   {
     name: "Bootstrap",
@@ -81,24 +103,8 @@ const technologies = [
     icon: tailwind,
   },
   {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
     name: "jQuery",
     icon: jQuery,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
   },
   {
     name: "Redux Toolkit",

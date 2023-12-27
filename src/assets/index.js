@@ -9,6 +9,7 @@ import web from "./web.png";
 
 import bootstrap from './tech/bootstrap.png';
 import css from "./tech/css.png";
+import shopify from "./tech/shopify.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
@@ -57,6 +58,7 @@ export {
   menu,
   close,
   css,
+  shopify,
   figma,
   git,
   html,
