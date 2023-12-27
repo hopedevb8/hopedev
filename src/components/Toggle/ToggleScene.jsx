@@ -17,6 +17,9 @@ const ToggleScene = ({ toggleTheme }) => {
     const AUDIO = {
       CLICK: new Audio(click),
     };
+    const STATE = {
+      ON: false,
+    };
 
     const CORDS = document.querySelectorAll('.toggle-scene__cord');
     const HIT = document.querySelector('.toggle-scene__hit-spot');
@@ -38,7 +41,8 @@ const ToggleScene = ({ toggleTheme }) => {
     const CORD_TL = timeline({
       paused: true,
       onStart: () => {
-        set(document.documentElement, { '--on': lightOn ? 1 : 0 });
+        STATE.ON = !STATE.ON;
+        set(document.documentElement, { '--on': STATE.ON || lightOn ? 1 : 0 });
         set([DUMMY_CORD, HIT], { display: 'none' });
         set(CORDS[0], { display: 'block' });
         AUDIO.CLICK.play();
