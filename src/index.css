@@ -238,7 +238,6 @@
 
 .glitch:before {
 	left: 0;
-	left: 2px;
 	text-shadow: -2px 0 #ff00c1;
 	clip: rect(44px, 450px, 56px, 0);
 	animation: glitch-anim 5s linear infinite alternate-reverse;

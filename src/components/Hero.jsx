@@ -25,12 +25,11 @@ const Hero = () => {
 					</h1>
 					<p
 						className={`${styles.heroSubText} mt-2 text-white-100 glitch`}
-						data-text='Im a Vietnamese based web/app developer focused on crafting clean & user‑friendly experiences, I am passionate about building excellent software that improves the lives of those around me.'
+						data-text={`I'm a Vietnamese based web/app developer focused on
+  crafting clean & user‑friendly experiences.`}
 					>
 						I'm a Vietnamese based web/app developer focused on
-  crafting clean & user‑friendly experiences, I am passionate about
-  building excellent software that improves the lives of those
-  around me.
+  crafting clean & user‑friendly experiences.
 					</p>
 				</div>
 			</div>
