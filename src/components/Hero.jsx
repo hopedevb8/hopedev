@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import Lottie from "lottie-react";
 import codingCoffee from "../assets/coding-coffee.json";
 import { styles } from "../styles";
+import Typewriter from "./typingText/Typing";
 
 const Hero = () => {
 	return (
@@ -20,7 +21,7 @@ const Hero = () => {
 					<h1 className={`${styles.heroHeadText}  text-white`}>
 						Hi, I'm{" "}
 						<span className='animate-text bg-gradient-to-r from-teal-500 via-[#915eff] to-orange-500 bg-clip-text text-transparent'>
-							Dinh Hop
+							<Typewriter text="Dinh Hop" delay={200} />
 						</span>
 					</h1>
 					<p
