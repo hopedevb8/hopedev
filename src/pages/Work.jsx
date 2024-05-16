@@ -8,8 +8,7 @@ import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { Experience } from "../components";
-import { StarsCanvas } from "../components/canvas";
-
+import { StarsCanvas ,Sky} from "../components/canvas";
 const ProjectCard = ({
 	index,
 	name,
@@ -20,7 +19,7 @@ const ProjectCard = ({
 	source_code_link,
 }) => {
 	return (
-		<div>
+		<div className="w-full">
 			<Tilt
 				options={{
 					max: 45,
@@ -112,8 +111,8 @@ const Works = () => {
 					);
 				})}
 			</div>
+			<Sky />
 			<StarsCanvas />
-
 		</>
 	);
 };

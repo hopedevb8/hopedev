@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { About, Hero, Tech } from "../components";
 import Social from "../components/Social";
 import StarsCanvas from '../components/canvas/Stars'
+import SkyCanvas from '../components/canvas/Sky'
 function Home() {
 	useEffect(() => {
 		window.scrollTo({ top: 0, behaviour: "smooth" });
@@ -14,6 +15,7 @@ function Home() {
 			<About />
 			<Tech />
 			<Social />
+			<SkyCanvas/>
 			<StarsCanvas />
 		</div>
 	);

@@ -4,7 +4,7 @@ import { useRef, useState } from "react";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 import { slideIn } from "../utils/motion";
-import { EarthCanvas, StarsCanvas } from "../components/canvas";
+import { EarthCanvas, StarsCanvas ,Sky} from "../components/canvas";
 import SendingForm from "../components/SendingForm";
 function Contact() {
 	const [form, setForm] = useState({
@@ -50,7 +50,8 @@ function Contact() {
 			);
 	};
 	return (
-		<div className='relative z-0 h-screen flex justify-center items-center'>
+		<div className="absolute h-screen w-screen top-0 left-0">
+			<div className='relative z-0 h-screen flex justify-center items-center'>
 			<div className='xl:flex-row flex-col-reverse flex gap-10 overflow-hidden w-full'>
 				 
 				<motion.div
@@ -116,6 +117,8 @@ function Contact() {
 				</motion.div>
 			</div>
 			<StarsCanvas />
+			<Sky />
+			</div>
 		</div>
 	);
 }
