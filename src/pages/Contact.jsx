@@ -50,7 +50,7 @@ function Contact() {
 			);
 	};
 	return (
-		<div className="absolute h-screen w-screen top-0 left-0">
+		<div className="absolute bg-primary h-screen w-screen top-0 left-0">
 			<div className='relative z-0 h-screen flex justify-center items-center'>
 			<div className='xl:flex-row flex-col-reverse flex gap-10 overflow-hidden w-full'>
 				 
