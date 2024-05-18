@@ -18,10 +18,10 @@ const ExperienceCard = ({ experience }) => {
 			contentStyle={{ background: "#1d1836", color: "#fff" }}
 			contentArrowStyle={{ borderRight: "7px solid #232631" }}
 			date={experience.date}
-			iconStyle={{ background: experience.iconBg ,overflow:"hidden"}}
+			iconStyle={{ background: experience.iconBg, overflow: "hidden" }}
 			icon={
 				<div className='flex justify-center items-center h-full w-full'>
-					<img src={experience.icon} className='w-5/5 h-5/5 object-contain' />
+					<img src={experience.icon} className='w-5/5 h-5/5 object-contain' alt={`${experience.company_name} logo`} />
 				</div>
 			}
 		>
@@ -32,16 +32,14 @@ const ExperienceCard = ({ experience }) => {
 				</p>
 			</div>
 			<ul className='mt-5 list-disc ml-5 space-y-2'>
-				{experience.points.map((point, index) => {
-					return (
-						<li
-							key={`experience-point-${index}`}
-							className='text-white-100 text-[14px] pl-1 tracking-wider'
-						>
-							{point}
-						</li>
-					);
-				})}
+				{experience.points.map((point, index) => (
+					<li
+						key={`experience-point-${index}`}
+						className='text-white-100 text-[14px] pl-1 tracking-wider'
+					>
+						{point}
+					</li>
+				))}
 			</ul>
 		</VerticalTimelineElement>
 	);
@@ -50,19 +48,20 @@ const ExperienceCard = ({ experience }) => {
 const Experience = () => {
 	return (
 		<>
-			<div
+			<motion.div
 				variants={textVariant}
 				className='mt-12'
-				viewport={{ once: false }}
+				initial="hidden"
+				animate="visible"
 			>
 				<p className={styles.sectionSubText}>What I have done so far</p>
 				<h2 className={styles.sectionHeadText}>Work Experience.</h2>
-			</div>
+			</motion.div>
 			<div className='mt-10 flex flex-col'>
 				<VerticalTimeline>
-					{experiences.map((experience, index) => {
-						return <ExperienceCard key={index} experience={experience} />;
-					})}
+					{experiences.map((experience, index) => (
+						<ExperienceCard key={index} experience={experience} />
+					))}
 				</VerticalTimeline>
 			</div>
 		</>
