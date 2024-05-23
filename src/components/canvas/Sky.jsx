@@ -1,7 +1,7 @@
-import * as THREE from "three";
-import { useRef, useMemo } from "react";
+import { Cloud, Clouds, Sky as SkyImpl } from "@react-three/drei";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Clouds, Cloud, CameraControls, Sky as SkyImpl, StatsGl } from "@react-three/drei";
+import { useMemo, useRef } from "react";
+import * as THREE from "three";
 
 export default function SkyCanvas() {
   return (
@@ -12,7 +12,6 @@ export default function SkyCanvas() {
         <spotLight position={[0, 40, 0]} decay={0} distance={45} penumbra={1} intensity={100} />
         <spotLight position={[-20, 0, 10]} color="red" angle={0.15} decay={0} penumbra={-1} intensity={30} />
         <spotLight position={[20, -10, 10]} color="red" angle={0.2} decay={0} penumbra={-1} intensity={20} />
-        <CameraControls />
       </Canvas>
     </div>
   );
