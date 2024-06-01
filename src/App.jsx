@@ -5,13 +5,14 @@ import { Navbar } from "./components";
 import RedirectToHome from "./components/RedirectToHome";
 import Loading from "./components/canvas/Loading";
 import GlobalStyle from "./globalStyled";
+import { Flower } from "./pages";
 const Home = lazy(
 	async () =>
 		await import("./pages").then((module) => ({
 			default: module.Home,
 		}))
 );
-const Workpage = lazy(
+const WorkPage = lazy(
 	async () =>
 		await import("./pages").then((module) => ({
 			default: module.Work,
@@ -21,6 +22,12 @@ const ContactPage = lazy(
 	async () =>
 		await import("./pages").then((module) => ({
 			default: module.Contact,
+		}))
+);
+const FlowerPage = lazy(
+	async () =>
+		await import("./pages").then((module) => ({
+			default: module.Flower,
 		}))
 );
 
@@ -35,7 +42,8 @@ const App = () => {
 						<Routes>
 							<Route path='/' element={<Home />} />
 							<Route path='contact' element={<ContactPage />} />
-							<Route path='work' element={<Workpage />} />
+							<Route path='work' element={<WorkPage />} />
+							<Route path='flower' element={<Flower />} />
 							<Route path='*' element={<RedirectToHome />} />
 						</Routes>
 					</BrowserRouter>

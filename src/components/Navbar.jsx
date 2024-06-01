@@ -14,9 +14,10 @@ const Navbar = () => {
 	const [active, setActive] = useState("");
 	const [toggle, setToggle] = useState(false);
 	const location = useLocation();
-
+	const { pathname } = location;
+	const onlyPath = pathname.slice(1);
 	useEffect(() => {
-		setActive(location.pathname);
+		setActive(pathname);
 	}, [location]);
  const themes = {
     light: 'light',
@@ -41,7 +42,7 @@ const Navbar = () => {
   }, [theme]);
 	return (
 		<nav
-			className={`lg:px-16 px-6 NavBar w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
+			className={`lg:px-16 px-6 NavBar w-full flex items-center py-5 fixed top-0 z-20 bg-primary ${onlyPath}`}
 		>
 			<div className='w-full flex justify-between items-center mx-auto'>
 				<Link

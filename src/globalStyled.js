@@ -109,6 +109,9 @@ const globalStyle = createGlobalStyle`
         }
     }
 }
+nav.flower{
+    display: none !important;
+}
 `;
 
 export default globalStyle;
