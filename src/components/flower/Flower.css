@@ -995,4 +995,33 @@ div.flower-body {
   animation-play-state: paused !important;
 }
 
+.flower-text {
+  background-image: url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExYnhmNWFndjBjODVlaG9xNHhsajVoMGI2c3drcmlqdm40ZWhneHQ4ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/BHWoX8f4EqKcPTALTK/giphy.gif);
+  background-size: cover;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin: 10px 0;
+  font-family: "Cairo";
+  font-weight: bolder;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  position: absolute;
+  top: 30%;
+  padding: 0 15px;
+}
+@media (min-width: 1024px) {
+  .flower-text {
+    font-size: 42px;
+    padding: 0 20px;
+  }
+}
+
 /*# sourceMappingURL=Flower.css.map */
