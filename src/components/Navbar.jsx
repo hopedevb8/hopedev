@@ -42,7 +42,7 @@ const Navbar = () => {
   }, [theme]);
 	return (
 		<nav
-			className={`lg:px-16 px-6 NavBar w-full flex items-center py-5 fixed top-0 z-20 bg-primary ${onlyPath}`}
+			className={`lg:px-16 px-6 NavBar w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
 		>
 			<div className='w-full flex justify-between items-center mx-auto'>
 				<Link
@@ -76,11 +76,11 @@ const Navbar = () => {
 						);
 					})}
 					
-					<ToggleScene toggleTheme={toggleTheme} />
+					<ToggleScene toggleTheme={toggleTheme} className={`nav-${onlyPath}`} />
 					
 				</ul>
-				<div className='sm:hidden flex flex-1 justify-end items-center'>
-					<Toggle className={`${theme} mr-5`} onClick={toggleThemeMobile} id='toggle'>
+				<div className={`sm:hidden flex flex-1 justify-end items-center`}>
+					<Toggle className={`${theme} mr-5  nav-${onlyPath}`} onClick={toggleThemeMobile} id='toggle'>
                       <div id='circle'></div>
                     </Toggle>
 					<img

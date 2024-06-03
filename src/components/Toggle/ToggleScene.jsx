@@ -5,7 +5,7 @@ import {Draggable} from 'gsap/Draggable';
 // import { MorphSVGPlugin } from 'gsap/MorphSVGPlugin';
 import click from '../../assets/click.mp3'
 
-const ToggleScene = ({ toggleTheme }) => {
+const ToggleScene = ({ toggleTheme ,className}) => {
   const [lightOn, setLightOn] = useState(false);
   useEffect(() => {
     const {  set, to, timeline } = gsap;
@@ -104,7 +104,7 @@ const ToggleScene = ({ toggleTheme }) => {
   }, [toggleTheme]);
 
   return (
-    <div className="toggle-scene-container z-50">
+    <div className={`toggle-scene-container z-50 ${className}`}>
       <svg className="toggle-scene" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin" viewBox="0 0 197.451 481.081">
         <defs>
           <marker id="e" orient="auto" overflow="visible" refX="0" refY="0">

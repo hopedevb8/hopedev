@@ -109,7 +109,7 @@ const globalStyle = createGlobalStyle`
         }
     }
 }
-nav.flower{
+.nav-flower{
     display: none !important;
 }
 `;

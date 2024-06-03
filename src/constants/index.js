@@ -28,7 +28,8 @@ import {
   trustandsafety,
   typescript,
   web,
-  shopify
+  shopify,
+  flower
 } from "../assets";
 
 export const navLinks = [
@@ -175,6 +176,11 @@ const socials = [
     link: "https://www.facebook.com/dnhndh/",
     name: 'facebook'
 
+  },
+  {
+    image: flower,
+    link: "/flower",
+    name: 'gift-flower'
   }
 ]
 

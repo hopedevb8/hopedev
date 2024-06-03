@@ -47,6 +47,7 @@ import dragon from './dragon.png'
 import hhome from './hhome.png'
 import mothercare from './mothercare.png'
 import mocaverse from './mocaverse.png'
+import flower from './flower.png'
 
 export {
   logo,
@@ -93,5 +94,6 @@ export {
   hhome,
   dragon,
   mothercare,
-  mocaverse
+  mocaverse,
+  flower
 };

@@ -41,6 +41,13 @@
 .facebook.black-gradient{
 	background: #0766ff;
 }
+.gift-flower.black-gradient {
+    background: linear-gradient(
+		to right,
+		#ff3f62,
+		#ff0c38
+	);
+}
 .gmail.black-gradient{
 	background: linear-gradient( to right, #4285f4, #bb011b,#ea4336 ,#fbbd05,#34a853);
 }
