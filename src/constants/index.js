@@ -160,7 +160,7 @@ const socials = [
   },
   {
     image: instagram,
-    link: "https://www.instagram.com/hopedevb8/",
+    link: "https://www.instagram.com/viehopedev/",
     name: 'instagram'
 
   },
