@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import Lottie from "lottie-react";
 import codingCoffee from "../assets/coding-coffee.json";
+import coding from "../assets/coding.json";
+
 import { styles } from "../styles";
 import Typewriter from "./typingText/Typing";
 
@@ -35,7 +37,7 @@ const Hero = () => {
 				</div>
 			</div>
 			<div className='flex justify-center absolute inset-0 h-full w-full bottom-0 mt-40 lg:mt-48'>
-				<Lottie animationData={codingCoffee} loop={true} />
+				<Lottie animationData={coding} loop={true} />
 			</div>
 			
 		</section>

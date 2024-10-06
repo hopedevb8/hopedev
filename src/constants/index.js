@@ -29,7 +29,8 @@ import {
   typescript,
   web,
   shopify,
-  flower
+  flower,
+  evisu
 } from "../assets";
 
 export const navLinks = [
@@ -210,6 +211,28 @@ const projects = [
     image: contenthub,
     openSource: false,
     source_code_link: "https://blog.magiceden.io/",
+  },
+  {
+    name: "EVISU Official Online Store",
+    description:
+      "Official Site — Shop the Exclusive EVISU Collection. Shop top pieces online now. Elevate your wardrobe today. Look your best with Evisu. Store Locator. View Our History. Register Online.",
+    tags: [
+      {
+        name: "Shopify",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "NodeJs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "JQuery",
+        color: "orange-text-gradient"
+      }
+    ],
+    image: evisu,
+    openSource: false,
+    source_code_link: "https://evisu.com.hk/",
   },
   {
     name: "MagicEden Trust and Safety",

@@ -5,11 +5,11 @@ import { SectionWrapper } from "../hoc";
 function Flower() {
 	
 	return (
-		<div className="absolute bg-primary h-screen w-screen top-0 left-0">
+		<div className="absolute  bg-primary h-screen w-screen top-0 left-0">
 			<div className='relative z-0 h-screen flex justify-center items-center'>
-			<FlowerSection/>
-            <StarsCanvas />
-            <TextTitle/>
+                <FlowerSection/>
+                <StarsCanvas />
+                <TextTitle/>
 			</div>
 		</div>
 	);
