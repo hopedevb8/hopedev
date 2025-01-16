@@ -49,6 +49,7 @@ import mothercare from './mothercare.png'
 import mocaverse from './mocaverse.png'
 import flower from './flower.png'
 import evisu from './evisu.png'
+import bbbc from "./bbbc.png";
 
 export {
   logo,
@@ -97,5 +98,6 @@ export {
   mothercare,
   mocaverse,
   flower,
-  evisu
+  evisu,
+  bbbc,
 };

@@ -10,76 +10,72 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { Experience } from "../components";
 import { StarsCanvas ,Sky} from "../components/canvas";
 const ProjectCard = ({
-	index,
-	name,
-	description,
-	tags,
-	image,
-	openSource,
-	source_code_link,
+  index,
+  name,
+  description,
+  tags,
+  image,
+  openSource,
+  source_code_link,
+  src_link,
 }) => {
-	return (
-		<div className="w-full">
-			<Tilt
-				options={{
-					max: 45,
-					scale: 1,
-					speed: 450,
-				}}
-				className='project-card bg-tertiary p-5 rounded-2xl w-full h-full flex flex-col justify-between'
-			>
-				<div className='relative w-full h-[230px]'>
-					<img
-						src={image}
-						alt='project_image'
-						className='w-full h-full object-cover rounded-2xl'
-					/>
+  return (
+    <div className="w-full">
+      <Tilt
+        options={{
+          max: 45,
+          scale: 1,
+          speed: 450,
+        }}
+        className="project-card bg-tertiary p-5 rounded-2xl w-full h-full flex flex-col justify-between"
+      >
+        <div className="relative w-full h-[230px]">
+          <img
+            src={image}
+            alt="project_image"
+            className="w-full h-full object-cover rounded-2xl"
+          />
 
-					<div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
-						<div
-							onClick={() => window.open(source_code_link, "_blank")}
-							className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
-						>
-							<img src={live} className='h-1/2 w-1/2 object-contain' alt='' />
-						</div>
-						{openSource && (
-							<div
-								onClick={() =>
-									window.open(
-										"#",
-										"_blank"
-									)
-								}
-								className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
-							>
-								<img
-									src={github}
-									className='h-1/2 w-1/2 object-contain'
-									alt=''
-								/>
-							</div>
-						)}
-					</div>
-				</div>
+          <div className="absolute inset-0 flex justify-end m-3 gap-2 card-img_hover">
+            <div
+              onClick={() => window.open(source_code_link, "_blank")}
+              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+            >
+              <img src={live} className="h-1/2 w-1/2 object-contain" alt="" />
+            </div>
+            {openSource && (
+              <div
+                onClick={() => window.open(src_link, "_blank")}
+                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              >
+                <img
+                  src={github}
+                  className="h-1/2 w-1/2 object-contain"
+                  alt=""
+                />
+              </div>
+            )}
+          </div>
+        </div>
 
-				<div className='mt-5'>
-					<h3 className='text-white font-bold text-[24px]'>{name}</h3>
-					<p className='mt-2 text-secondary text-[14px]'>{description}</p>
-				</div>
+        <div className="mt-5">
+          <h3 className="text-white font-bold text-[24px]">{name}</h3>
+          <p className="mt-2 text-secondary text-[14px]">{description}</p>
+        </div>
 
-				<div className='mt-4 flex flex-wrap gap-2'>
-					{tags.map((tag) => (
-						<p
-							key={`${name}-${tag.name}`}
-							className={`text-[15px] font-semibold ${tag.color}`}
-						>
-							#{tag.name}
-						</p>
-					))}
-				</div>
-			</Tilt>
-		</div>
-	);
+        <div className="mt-4 flex flex-wrap gap-2">
+          {tags.map((tag) => (
+            <p
+              key={`${name}-${tag.name}`}
+              className={`text-[15px] font-semibold ${tag.color}`}
+            >
+              #{tag.name}
+            </p>
+          ))}
+        </div>
+      </Tilt>
+    </div>
+  );
 };
 
 const Works = () => {

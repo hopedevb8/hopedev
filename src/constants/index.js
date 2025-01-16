@@ -30,7 +30,8 @@ import {
   web,
   shopify,
   flower,
-  evisu
+  evisu,
+  bbbc,
 } from "../assets";
 
 export const navLinks = [
@@ -74,8 +75,7 @@ const technologies = [
   {
     name: "CSS 3",
     icon: css,
-  }
-  ,
+  },
   {
     name: "JavaScript",
     icon: javascript,
@@ -137,7 +137,7 @@ const experiences = [
     company_name: "Branch 8",
     icon: branch8,
     iconBg: "#383E56",
-    date: "June 2022 - Present",
+    date: "June 2022 - Dec 2024",
     points: [
       "Developing responsive web apps with React, Redux Toolkit, and TypeScript.",
       "Update and fix for Shopify eCommerce products.",
@@ -151,67 +151,36 @@ const socials = [
   {
     image: linkedin,
     link: "https://www.linkedin.com/in/hopnguyendinh/",
-    name: 'linkedin'
+    name: "linkedin",
   },
   {
     image: github,
     link: "https://github.com/hopedevb8",
-    name: 'github'
-
+    name: "github",
   },
   {
     image: instagram,
-    link: "https://www.instagram.com/viehopedev/",
-    name: 'instagram'
-
+    link: "https://www.instagram.com/_gepoh/",
+    name: "instagram",
   },
   {
     image: gmail,
     link: "mailto:nguyendinhhop8400@gmail.com",
-    name: 'gmail'
-
-  }
-  ,
+    name: "gmail",
+  },
   {
     image: facebook,
     link: "https://www.facebook.com/dnhndh/",
-    name: 'facebook'
-
+    name: "facebook",
   },
   {
     image: flower,
     link: "/flower",
-    name: 'gift-flower'
-  }
-]
+    name: "gift-flower",
+  },
+];
 
 const projects = [
-  {
-    name: "MagicEden Content Hub",
-    description:
-      "Web-based platform that provides information and articles about the NFT market.",
-    tags: [
-      {
-        name: "ReactJS",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "NextJs",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Cloudflare",
-        color: "orange-text-gradient"
-      },
-      {
-        name: "Styled Component",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: contenthub,
-    openSource: false,
-    source_code_link: "https://blog.magiceden.io/",
-  },
   {
     name: "EVISU Official Online Store",
     description:
@@ -227,34 +196,51 @@ const projects = [
       },
       {
         name: "JQuery",
-        color: "orange-text-gradient"
-      }
+        color: "orange-text-gradient",
+      },
     ],
     image: evisu,
-    openSource: false,
+    openSource: true,
     source_code_link: "https://evisu.com.hk/",
+    src_link: "https://github.com/branch8/project-shopify-evisu",
   },
   {
-    name: "MagicEden Trust and Safety",
+    name: "Mothercare HK",
     description:
-      "Magic Eden aims to be your destination for discovery, expression, and ownership across digital cultures. ",
+      "Mothercare offers support for every step of your journey with their with their range of children’s clothing, toys, nursery essentials, pushchairs, car seats and more. Their products are made with you and your little ones in mind, making them the go-to brand for all things parenting.",
     tags: [
       {
-        name: "ReactJS",
+        name: "Shopify",
         color: "blue-text-gradient",
       },
       {
-        name: "NextJs",
+        name: "JQuery",
         color: "green-text-gradient",
       },
+    ],
+    image: mothercare,
+    openSource: true,
+    source_code_link: "https://www.mothercare.com.hk/",
+    src_link: "https://github.com/hopedevb8/mothercare-hk",
+  },
+  {
+    name: "Best Bean Best Cup",
+    description:
+      "Our elite blend masterfully combines rich Colombian flavors, Brazilian consistency, and Ethiopian excellence. Crafted to satisfy both black coffee enthusiasts ...",
+    tags: [
       {
-        name: "Styled Component",
-        color: "orange-text-gradient"
+        name: "Shopify",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JQuery",
+        color: "green-text-gradient",
       },
     ],
-    image: trustandsafety,
-    openSource: false,
-    source_code_link: "https://trustandsafety.magiceden.io/",
+    image: bbbc,
+    openSource: true,
+    source_code_link: "https://bestbeanbestcup.com.au/",
+    src_link: "https://github.com/HoanNguyenDinh/bbbd",
   },
   {
     name: "Open Campus ID",
@@ -272,11 +258,12 @@ const projects = [
       {
         name: "Cloudflare",
         color: "orange-text-gradient",
-      }
+      },
     ],
     image: opencampus,
-    openSource: false,
+    openSource: true,
     source_code_link: "https://project-open-campus-id.pages.dev/",
+    src_link: "https://github.com/branch8/project-open-campus-labs",
   },
   {
     name: "Okay Bear NFTs",
@@ -290,13 +277,14 @@ const projects = [
       {
         name: "Styled Component",
         color: "green-text-gradient",
-      }
+      },
     ],
     image: okaybear,
-    openSource: false,
+    openSource: true,
     source_code_link: "https://okay-bears-marketplace.pages.dev/",
+    src_link: "https://github.com/HoanNguyenDinh/OKB-ETH",
   },
-  ,
+
   {
     name: "Boryoku Dragonz NFTs",
     description:
@@ -309,13 +297,14 @@ const projects = [
       {
         name: "Styled Component",
         color: "green-text-gradient",
-      }
+      },
     ],
     image: dragon,
-    openSource: false,
+    openSource: true,
     source_code_link: "https://project-me-whitelabelmarketplace.pages.dev/",
+    src_link: "https://github.com/HoanNguyenDinh/OKB-ETH",
   },
-  ,
+
   {
     name: "HomeandHome",
     description:
@@ -324,32 +313,14 @@ const projects = [
       {
         name: "ReactNative",
         color: "blue-text-gradient",
-      }
+      },
     ],
     image: hhome,
     openSource: false,
-    source_code_link: "https://apps.apple.com/vn/app/hhome/id1606280635?platform=iphone",
+    source_code_link:
+      "https://apps.apple.com/vn/app/hhome/id1606280635?platform=iphone",
   },
-  ,
-  {
-    name: "Mothercare HK",
-    description:
-      "Mothercare offers support for every step of your journey with their with their range of children’s clothing, toys, nursery essentials, pushchairs, car seats and more. Their products are made with you and your little ones in mind, making them the go-to brand for all things parenting.",
-    tags: [
-      {
-        name: "Shopify",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "JQuery",
-        color: "green-text-gradient",
-      }
-    ],
-    image: mothercare,
-    openSource: false,
-    source_code_link: "https://www.mothercare.com.hk/",
-  },
-  ,
+
   {
     name: "Mocaverse",
     description:
@@ -362,11 +333,62 @@ const projects = [
       {
         name: "Styled Component",
         color: "green-text-gradient",
-      }
+      },
     ],
     image: mocaverse,
-    openSource: false,
+    openSource: true,
     source_code_link: "https://www.mocaverse.xyz/mocana",
+    src_link: "https://github.com/branch8/mocaverse-raffle",
+  },
+  {
+    name: "MagicEden Content Hub",
+    description:
+      "Web-based platform that provides information and articles about the NFT market.",
+    tags: [
+      {
+        name: "ReactJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "NextJs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Cloudflare",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Styled Component",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: contenthub,
+    openSource: true,
+    source_code_link: "https://blog.magiceden.io/",
+    src_link: "https://github.com/hopedevb8/project-me-contenthub",
+  },
+  {
+    name: "MagicEden Trust and Safety",
+    description:
+      "Magic Eden aims to be your destination for discovery, expression, and ownership across digital cultures. ",
+    tags: [
+      {
+        name: "ReactJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "NextJs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Styled Component",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: trustandsafety,
+    openSource: true,
+    source_code_link: "https://trustandsafety.magiceden.io/",
+    src_link: "https://github.com/HoanNguyenDinh/ME-Trust-and-Safety",
   },
 ];
 
