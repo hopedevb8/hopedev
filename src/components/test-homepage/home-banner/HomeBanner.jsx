@@ -151,7 +151,7 @@ const HomeBanner = () => {
               our premium VPN — no fees, no ads, no limits, just one click away.
             </p>
           </p>
-          <a href="*" className="get">
+          <a href="#" className="get">
             <svg
               fill="#ffffff"
               width="64px"
@@ -178,7 +178,7 @@ const HomeBanner = () => {
               Get SolarVPN Now <span>- 100% Free</span>
             </p>
           </a>
-          <a href="*" className="why">
+          <a href="#" className="why">
             Why Should I Use a VPN?
           </a>
         </div>

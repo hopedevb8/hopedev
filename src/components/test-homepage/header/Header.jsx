@@ -90,7 +90,7 @@ const Header = () => {
         </div>
         <ul className="nav-list">
           <li className="list-item">
-            <a href="*" className="active">
+            <a href="#" className="active">
               Home
             </a>
           </li>
@@ -113,13 +113,13 @@ const Header = () => {
                 <p className="title">Desktop</p>
                 <ul className="list-col__menu">
                   <li className="list-col__menu--item">
-                    <a href="*">Linux</a>
+                    <a href="#">Linux</a>
                   </li>
                   <li className="list-col__menu--item">
-                    <a href="*">macOS</a>
+                    <a href="#">macOS</a>
                   </li>
                   <li className="list-col__menu--item">
-                    <a href="*">Windows</a>
+                    <a href="#">Windows</a>
                   </li>
                 </ul>
               </div>
@@ -127,16 +127,16 @@ const Header = () => {
                 <p className="title">Desktop</p>
                 <ul className="list-col__menu">
                   <li className="list-col__menu--item">
-                    <a href="*">Mobile & TV</a>
+                    <a href="#">Mobile & TV</a>
                   </li>
                   <li className="list-col__menu--item">
-                    <a href="*">Android TV</a>
+                    <a href="#">Android TV</a>
                   </li>
                   <li className="list-col__menu--item">
-                    <a href="*">Apple TV</a>
+                    <a href="#">Apple TV</a>
                   </li>
                   <li className="list-col__menu--item">
-                    <a href="*">iOS</a>
+                    <a href="#">iOS</a>
                   </li>
                 </ul>
               </div>
@@ -144,28 +144,28 @@ const Header = () => {
                 <p className="title">Extensions</p>
                 <ul className="list-col__menu">
                   <li className="list-col__menu--item">
-                    <a href="*">Chrome</a>
+                    <a href="#">Chrome</a>
                   </li>
                   <li className="list-col__menu--item">
-                    <a href="*">Firefox</a>
+                    <a href="#">Firefox</a>
                   </li>
                 </ul>
               </div>
             </div>
           </li>
           <li className="list-item">
-            <a href="*" className="">
+            <a href="#" className="">
               {" "}
               Why SolarVPN
             </a>
           </li>
           <li className="list-item">
-            <a href="*" className="">
+            <a href="#" className="">
               Servers
             </a>
           </li>
           <li className="list-item">
-            <a href="*" className="">
+            <a href="#" className="">
               News
             </a>
           </li>
@@ -184,24 +184,24 @@ const Header = () => {
                 openDropdown === "help" ? "show" : ""
               }`}
             >
-              <a href="*">Frequently Asked Questions</a>
+              <a href="#">Frequently Asked Questions</a>
             </div>
           </li>
         </ul>
         <div className="login-mobile">
-          <a href="*" className="sign-in">
+          <a href="#" className="sign-in">
             Sign in
           </a>
-          <a href="*" className="sign-up">
+          <a href="#" className="sign-up">
             Sign up
           </a>
         </div>
       </div>
       <div className="login-desk">
-        <a href="*" className="sign-in">
+        <a href="#" className="sign-in">
           Sign in
         </a>
-        <a href="*" className="sign-up">
+        <a href="#" className="sign-up">
           Sign up
         </a>
       </div>

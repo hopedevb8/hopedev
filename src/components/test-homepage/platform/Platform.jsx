@@ -6,7 +6,7 @@ const Platform = () => {
         <div>
           <span className="title">Supported Platforms</span>
           <div className="list-platform">
-            <a href="*">
+            <a href="#">
               <svg
                 fill="#4b555f"
                 width="64px"
@@ -29,7 +29,7 @@ const Platform = () => {
               </svg>
               Android
             </a>
-            <a href="*">
+            <a href="#">
               <svg
                 fill="#4b555f"
                 width="64px"
@@ -52,7 +52,7 @@ const Platform = () => {
               </svg>{" "}
               Android TV
             </a>
-            <a href="*">
+            <a href="#">
               <svg
                 fill="#4b555f"
                 width="64px"
@@ -76,7 +76,7 @@ const Platform = () => {
               </svg>
               Apple TV
             </a>
-            <a href="*">
+            <a href="#">
               <svg
                 fill="#4b555f"
                 width="64px"
@@ -99,7 +99,7 @@ const Platform = () => {
               </svg>
               Chrome
             </a>
-            <a href="*">
+            <a href="#">
               <svg
                 fill="#4b555f"
                 width="64px"
@@ -122,7 +122,7 @@ const Platform = () => {
               </svg>
               Firefox
             </a>
-            <a href="*">
+            <a href="#">
               <svg
                 width="64px"
                 height="64px"
@@ -174,7 +174,7 @@ const Platform = () => {
               </svg>
               iOS
             </a>
-            <a href="*">
+            <a href="#">
               <svg
                 fill="#4b555f"
                 viewBox="0 0 32 32"
@@ -195,7 +195,7 @@ const Platform = () => {
               </svg>
               Linux
             </a>
-            <a href="*">
+            <a href="#">
               <svg
                 fill="#4b555f"
                 width="64px"
@@ -218,7 +218,7 @@ const Platform = () => {
               </svg>
               macOS
             </a>
-            <a href="*">
+            <a href="#">
               <svg
                 width="64px"
                 height="64px"

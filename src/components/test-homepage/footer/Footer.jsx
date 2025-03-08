@@ -9,28 +9,28 @@ const Footer = () => {
               <p className="title">Products</p>
               <ul>
                 <li>
-                  <a href="*">VPN for Android</a>
+                  <a href="#">VPN for Android</a>
                 </li>
                 <li>
-                  <a href="*">VPN for Android TV</a>
+                  <a href="#">VPN for Android TV</a>
                 </li>
                 <li>
-                  <a href="*">VPN for Apple TV</a>
+                  <a href="#">VPN for Apple TV</a>
                 </li>
                 <li>
-                  <a href="*">VPN for Chrome</a>
+                  <a href="#">VPN for Chrome</a>
                 </li>
                 <li>
-                  <a href="*">VPN for Firefox</a>
+                  <a href="#">VPN for Firefox</a>
                 </li>
                 <li>
-                  <a href="*">VPN for Linux</a>
+                  <a href="#">VPN for Linux</a>
                 </li>
                 <li>
-                  <a href="*">VPN for macOS</a>
+                  <a href="#">VPN for macOS</a>
                 </li>
                 <li>
-                  <a href="*">VPN for Windows</a>
+                  <a href="#">VPN for Windows</a>
                 </li>
               </ul>
             </div>
@@ -39,16 +39,16 @@ const Footer = () => {
                 <p className="title">Products</p>
                 <ul>
                   <li>
-                    <a href="*">VPN for Android</a>
+                    <a href="#">VPN for Android</a>
                   </li>
                   <li>
-                    <a href="*">VPN for Android TV</a>
+                    <a href="#">VPN for Android TV</a>
                   </li>
                   <li>
-                    <a href="*">VPN for Apple TV</a>
+                    <a href="#">VPN for Apple TV</a>
                   </li>
                   <li>
-                    <a href="*">VPN for Chrome</a>
+                    <a href="#">VPN for Chrome</a>
                   </li>
                 </ul>
               </div>{" "}
@@ -56,13 +56,13 @@ const Footer = () => {
                 <p className="title">Products</p>
                 <ul>
                   <li>
-                    <a href="*">VPN for Android</a>
+                    <a href="#">VPN for Android</a>
                   </li>
                   <li>
-                    <a href="*">VPN for Android TV</a>
+                    <a href="#">VPN for Android TV</a>
                   </li>
                   <li>
-                    <a href="*">VPN for Apple TV</a>
+                    <a href="#">VPN for Apple TV</a>
                   </li>
                 </ul>
               </div>
@@ -71,13 +71,13 @@ const Footer = () => {
               <p className="title">Products</p>
               <ul>
                 <li>
-                  <a href="*">VPN for Android</a>
+                  <a href="#">VPN for Android</a>
                 </li>
                 <li>
-                  <a href="*">VPN for Android TV</a>
+                  <a href="#">VPN for Android TV</a>
                 </li>
                 <li>
-                  <a href="*">VPN for Apple TV</a>
+                  <a href="#">VPN for Apple TV</a>
                 </li>
               </ul>
             </div>
@@ -91,7 +91,7 @@ const Footer = () => {
                 <button className="btn-get">Get SolarVPN - It’s free!</button>
               </div>
               <div className="social">
-                <a href="*">
+                <a href="#">
                   <svg
                     width="64px"
                     height="64px"
@@ -142,7 +142,7 @@ const Footer = () => {
                     </g>
                   </svg>
                 </a>
-                <a href="*">
+                <a href="#">
                   <svg
                     width="64px"
                     height="64px"
@@ -167,7 +167,7 @@ const Footer = () => {
                     </g>
                   </svg>
                 </a>
-                <a href="*">
+                <a href="#">
                   <svg
                     fill="#042130"
                     height="64px"

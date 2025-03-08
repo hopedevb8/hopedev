@@ -222,6 +222,7 @@ export const HeaderContainer = styled.nav`
       width: 100%;
       max-width: 400px;
       padding: 30px;
+      overflow: auto;
     }
 
     .nav-elements ul {
