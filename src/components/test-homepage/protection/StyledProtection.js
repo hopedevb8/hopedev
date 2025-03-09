@@ -247,6 +247,9 @@ export const ProtectionContent = styled.div`
           font-size: 16px;
           line-height: 25.6px;
         }
+        .list {
+          display: none;
+        }
         a.why {
           font-size: 13px;
         }
