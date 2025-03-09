@@ -37,21 +37,21 @@ const UserStory = () => {
     return (
       <div className="feedback-item">
         <ul
-          class="ant-rate css-17seli4 ant-rate-disabled"
-          tabindex="-1"
+          className="ant-rate css-17seli4 ant-rate-disabled"
+          tabIndex="-1"
           role="radiogroup"
           style={{ color: "rgb(0, 182, 122)" }}
         >
-          <li class="ant-rate-star ant-rate-star-full">
+          <li className="ant-rate-star ant-rate-star-full">
             <div
               role="radio"
               aria-checked="true"
               aria-posinset="1"
               aria-setsize="5"
-              tabindex="-1"
+              tabIndex="-1"
               bis_skin_checked="1"
             >
-              <div class="ant-rate-star-first" bis_skin_checked="1">
+              <div className="ant-rate-star-first" bis_skin_checked="1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="22"
@@ -66,7 +66,7 @@ const UserStory = () => {
                   ></path>
                 </svg>
               </div>
-              <div class="ant-rate-star-second" bis_skin_checked="1">
+              <div className="ant-rate-star-second" bis_skin_checked="1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="22"
@@ -83,16 +83,16 @@ const UserStory = () => {
               </div>
             </div>
           </li>
-          <li class="ant-rate-star ant-rate-star-full">
+          <li className="ant-rate-star ant-rate-star-full">
             <div
               role="radio"
               aria-checked="true"
               aria-posinset="2"
               aria-setsize="5"
-              tabindex="-1"
+              tabIndex="-1"
               bis_skin_checked="1"
             >
-              <div class="ant-rate-star-first" bis_skin_checked="1">
+              <div className="ant-rate-star-first" bis_skin_checked="1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="22"
@@ -107,7 +107,7 @@ const UserStory = () => {
                   ></path>
                 </svg>
               </div>
-              <div class="ant-rate-star-second" bis_skin_checked="1">
+              <div className="ant-rate-star-second" bis_skin_checked="1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="22"
@@ -124,16 +124,16 @@ const UserStory = () => {
               </div>
             </div>
           </li>
-          <li class="ant-rate-star ant-rate-star-full">
+          <li className="ant-rate-star ant-rate-star-full">
             <div
               role="radio"
               aria-checked="true"
               aria-posinset="3"
               aria-setsize="5"
-              tabindex="-1"
+              tabIndex="-1"
               bis_skin_checked="1"
             >
-              <div class="ant-rate-star-first" bis_skin_checked="1">
+              <div className="ant-rate-star-first" bis_skin_checked="1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="22"
@@ -148,7 +148,7 @@ const UserStory = () => {
                   ></path>
                 </svg>
               </div>
-              <div class="ant-rate-star-second" bis_skin_checked="1">
+              <div className="ant-rate-star-second" bis_skin_checked="1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="22"
@@ -165,16 +165,16 @@ const UserStory = () => {
               </div>
             </div>
           </li>
-          <li class="ant-rate-star ant-rate-star-half ant-rate-star-active">
+          <li className="ant-rate-star ant-rate-star-half ant-rate-star-active">
             <div
               role="radio"
               aria-checked="true"
               aria-posinset="4"
               aria-setsize="5"
-              tabindex="-1"
+              tabIndex="-1"
               bis_skin_checked="1"
             >
-              <div class="ant-rate-star-first" bis_skin_checked="1">
+              <div className="ant-rate-star-first" bis_skin_checked="1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="22"
@@ -189,7 +189,7 @@ const UserStory = () => {
                   ></path>
                 </svg>
               </div>
-              <div class="ant-rate-star-second" bis_skin_checked="1">
+              <div className="ant-rate-star-second" bis_skin_checked="1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="22"
@@ -206,16 +206,16 @@ const UserStory = () => {
               </div>
             </div>
           </li>
-          <li class="ant-rate-star ant-rate-star-zero">
+          <li className="ant-rate-star ant-rate-star-zero">
             <div
               role="radio"
               aria-checked="false"
               aria-posinset="5"
               aria-setsize="5"
-              tabindex="-1"
+              tabIndex="-1"
               bis_skin_checked="1"
             >
-              <div class="ant-rate-star-first" bis_skin_checked="1">
+              <div className="ant-rate-star-first" bis_skin_checked="1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="22"
@@ -230,7 +230,7 @@ const UserStory = () => {
                   ></path>
                 </svg>
               </div>
-              <div class="ant-rate-star-second" bis_skin_checked="1">
+              <div className="ant-rate-star-second" bis_skin_checked="1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="22"
@@ -301,24 +301,23 @@ const UserStory = () => {
       <div className="actions">
         <button className="swiper-button-prev custom-prev">
           <svg
-            transform="rotate(180deg)"
             fill="#000000"
             height="64px"
             width="64px"
             version="1.1"
             id="Layer_1"
             xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
             viewBox="0 0 330.00 330.00"
-            xml:space="preserve"
+            xmlSpace="preserve"
             stroke="#000000"
-            stroke-width="0.0033"
+            strokeWidth="0.0033"
           >
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
             <g
               id="SVGRepo_tracerCarrier"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             ></g>
             <g id="SVGRepo_iconCarrier">
               {" "}
@@ -337,17 +336,17 @@ const UserStory = () => {
             version="1.1"
             id="Layer_1"
             xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
             viewBox="0 0 330.00 330.00"
-            xml:space="preserve"
+            xmlSpace="preserve"
             stroke="#000000"
-            stroke-width="0.0033"
+            strokeWidth="0.0033"
           >
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
             <g
               id="SVGRepo_tracerCarrier"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             ></g>
             <g id="SVGRepo_iconCarrier">
               {" "}

@@ -98,14 +98,14 @@ const Footer = () => {
                     viewBox="-5 0 20 20"
                     version="1.1"
                     xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
                     fill="#042130"
                   >
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                     <g
                       id="SVGRepo_tracerCarrier"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     ></g>
                     <g id="SVGRepo_iconCarrier">
                       {" "}
@@ -114,9 +114,9 @@ const Footer = () => {
                       <g
                         id="Page-1"
                         stroke="none"
-                        stroke-width="1"
+                        strokeWidth="1"
                         fill="none"
-                        fill-rule="evenodd"
+                        fillRule="evenodd"
                       >
                         {" "}
                         <g
@@ -150,17 +150,17 @@ const Footer = () => {
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                     <g
                       id="SVGRepo_tracerCarrier"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     ></g>
                     <g id="SVGRepo_iconCarrier">
                       {" "}
                       <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
+                        fillRule="evenodd"
+                        clipRule="evenodd"
                         d="M8.78251 21C16.3295 21 20.4592 14.4577 20.4592 8.7938C20.4592 8.60974 20.4592 8.42569 20.4512 8.24163C21.2515 7.63927 21.9478 6.87795 22.5 6.01624C21.7637 6.35925 20.9714 6.58514 20.1391 6.6939C20.9874 6.16683 21.6357 5.32185 21.9478 4.31791C21.1555 4.81152 20.2751 5.16289 19.3387 5.35531C18.5864 4.5187 17.522 4 16.3455 4C14.0806 4 12.2399 5.92421 12.2399 8.29183C12.2399 8.62648 12.2799 8.95276 12.3439 9.27067C8.93457 9.09498 5.90936 7.37992 3.88455 4.78642C3.53241 5.42224 3.33233 6.15846 3.33233 6.94488C3.33233 8.43406 4.06062 9.74754 5.15706 10.5172C4.48479 10.4921 3.85254 10.2997 3.30032 9.98179C3.30032 9.99852 3.30032 10.0153 3.30032 10.0404C3.30032 12.1152 4.71689 13.8553 6.58964 14.2485C6.2455 14.3489 5.88535 14.3991 5.5092 14.3991C5.2451 14.3991 4.989 14.374 4.7409 14.3238C5.2611 16.0305 6.78171 17.2687 8.57443 17.3022C7.16587 18.4567 5.39716 19.1427 3.47639 19.1427C3.14826 19.1427 2.82013 19.126 2.5 19.0842C4.30872 20.2889 6.46959 21 8.78251 21Z"
                         fill="#042130"
                       ></path>{" "}
@@ -175,15 +175,15 @@ const Footer = () => {
                     version="1.1"
                     id="Layer_1"
                     xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
                     viewBox="-271 271.4 256 259.6"
-                    xml:space="preserve"
+                    xmlSpace="preserve"
                   >
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                     <g
                       id="SVGRepo_tracerCarrier"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     ></g>
                     <g id="SVGRepo_iconCarrier">
                       {" "}
