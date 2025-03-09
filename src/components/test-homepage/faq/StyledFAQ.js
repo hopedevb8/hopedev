@@ -112,6 +112,13 @@ export const FAQContainer = styled.div`
             line-height: 19.6px;
           }
         }
+        .faq {
+          > div {
+            .title {
+              text-align: start;
+            }
+          }
+        }
       }
     }
   }

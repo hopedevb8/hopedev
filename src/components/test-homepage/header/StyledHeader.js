@@ -169,6 +169,13 @@ export const HeaderContainer = styled.nav`
   }
 
   .nav-elements {
+    height: 100%;
+    .nav-list {
+      height: 100%;
+      .list-item {
+        height: 100%;
+      }
+    }
   }
 
   .nav-elements ul {
@@ -234,6 +241,11 @@ export const HeaderContainer = styled.nav`
       margin-right: unset;
       margin-top: 22px;
       width: 100%;
+    }
+    .nav-elements {
+      .nav-list {
+        height: auto;
+      }
     }
     .nav-list {
       li.list-item {

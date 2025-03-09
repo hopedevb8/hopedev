@@ -48,7 +48,7 @@ const FAQ = () => {
             {faqs.map((faq, index) => (
               <div key={index} className="">
                 <button onClick={() => toggleFAQ(index)} className="">
-                  <span className="ttitle text-lg font-medium">
+                  <span className="title text-lg font-medium">
                     {faq.question}
                   </span>
                   {openIndex === index ? (
