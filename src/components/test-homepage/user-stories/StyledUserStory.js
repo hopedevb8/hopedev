@@ -9,6 +9,7 @@ export const UserStoryContainer = styled.div`
   justify-content: center;
   width: 100%;
   display: flex;
+  position: relative;
   .base-container {
     max-width: 1440px;
     padding: 0 15px;
@@ -104,6 +105,34 @@ export const UserStoryContainer = styled.div`
       }
     }
   }
+
+  .custom-prev {
+  }
+
+  .custom-next {
+  }
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    display: none;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: unset;
+  }
+  .swiper-button-prev svg {
+    transform: rotate(180deg);
+  }
+
+  .custom-prev:hover,
+  .custom-next:hover {
+  }
+  .actions {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
   @media (max-width: 1199px) {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -119,6 +148,11 @@ export const UserStoryContainer = styled.div`
           margin: 0 auto;
         }
       }
+    }
+    .actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
   }
   @media (max-width: 768px) {
