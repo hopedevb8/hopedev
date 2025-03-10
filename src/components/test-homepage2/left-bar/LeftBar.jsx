@@ -127,7 +127,6 @@ const LeftBar = () => {
     },
   ];
   const Li = ({ item }) => {
-    console.log(item, 999);
     return (
       <li className="list-item">
         <div
@@ -175,6 +174,7 @@ const LeftBar = () => {
       </li>
     );
   };
+
   return (
     <LeftBarContainer>
       <button className="nav-mobile" onClick={handleShowNavbar}>
@@ -217,6 +217,44 @@ const LeftBar = () => {
         <ul className="nav-list">
           {dummyData.length > 0 &&
             dummyData.map((item, index) => <Li key={index} item={item} />)}
+          <li className="list-item leftBar-mobile">
+            <div className="title" onClick={() => toggleDropdown("leftBar")}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+              >
+                <path
+                  d="M0 1H14V2.4H0V1ZM0 6H10.5V7.4H0V6ZM0 11H7V12.4H0V11Z"
+                  fill="white"
+                />
+              </svg>
+              On this page
+            </div>
+            {openDropdowns.has("leftBar") && (
+              <div className={`dropdown-content show`}>
+                <ul className="nav-list">
+                  <li className="list-item">
+                    <a href="#Search">Search our Document and courses</a>
+                  </li>
+                  <li className="list-item">
+                    <a href="#Find">What can I find here</a>
+                  </li>
+                  <li className="list-item">
+                    <a href="#Documentation">Demo Documentation</a>
+                  </li>
+                  <li className="list-item">
+                    <a href="#Explore">Explore the docs</a>
+                  </li>
+                  <li className="list-item">
+                    <a href="#">Most popular questions</a>
+                  </li>
+                </ul>
+              </div>
+            )}
+          </li>
         </ul>
       </div>
     </LeftBarContainer>

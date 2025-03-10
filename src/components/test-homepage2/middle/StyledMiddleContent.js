@@ -278,12 +278,12 @@ export const MiddleContentContainer = styled.div`
       }
     }
   }
-  @media (max-width: 1199px) {
-    width: 83%;
+
+  @media (max-width: 1023px) {
+    width: 100%;
   }
   @media (max-width: 992px) {
     padding: 16px;
-    width: 100%;
     .container {
       gap: 32px;
       .find-container {
