@@ -42,7 +42,11 @@ const Navbar = () => {
   const path = location.pathname.split("/").slice(0, 2).join("/");
   return (
     <nav
-      style={path === "/test-homepage" ? { display: "none" } : {}}
+      style={
+        path === "/demo-homepage" || path === "/demo-homepage2"
+          ? { display: "none" }
+          : {}
+      }
       className={`lg:px-16 px-6 NavBar w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
     >
       <div className="w-full flex justify-between items-center mx-auto">

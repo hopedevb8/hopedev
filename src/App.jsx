@@ -5,7 +5,7 @@ import { Navbar } from "./components";
 import RedirectToHome from "./components/RedirectToHome";
 import Loading from "./components/canvas/Loading";
 import GlobalStyle from "./globalStyled";
-import { Flower, TestHomePage } from "./pages";
+import { Flower, TestHomePage, TestHomePage2 } from "./pages";
 const Home = lazy(
   async () =>
     await import("./pages").then((module) => ({
@@ -44,6 +44,7 @@ const App = () => {
               <Route path="work" element={<WorkPage />} />
               <Route path="flower" element={<Flower />} />
               <Route path="demo-homepage" element={<TestHomePage />} />
+              <Route path="demo-homepage2" element={<TestHomePage2 />} />
               <Route path="*" element={<RedirectToHome />} />
             </Routes>
           </BrowserRouter>
