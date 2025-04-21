@@ -8,6 +8,8 @@ import Why from "./why/Why";
 import UserStory from "./user-stories/UserStory";
 import FAQ from "./faq/FAQ";
 import Footer from "./footer/Footer";
+import TimelineDemo from "./timeline/Timeline";
+
 const HomePage = () => {
   return (
     <Container>
@@ -16,6 +18,7 @@ const HomePage = () => {
       <Platform />
       <Started />
       <Why />
+      <TimelineDemo/>
       <Protection />
       <UserStory />
       <FAQ />
